@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лифт — симулятор</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel panel-left">
+        <h2>Внешний контроллер</h2>
+        <p>Вызов лифта на этаж</p>
+        <div id="externalButtons" class="button-grid"></div>
+      </section>
+
+      <section class="elevator-zone">
+        <div class="status">
+          <span id="statusText">Ожидание</span>
+          <span id="floorText">Этаж: 1</span>
+        </div>
+
+        <div class="building" id="building"></div>
+      </section>
+
+      <section class="panel panel-right">
+        <h2>Внутренний контроллер</h2>
+        <p>Куда едем?</p>
+        <div id="internalButtons" class="button-grid"></div>
+
+        <div class="service-controls">
+          <button id="openDoorBtn" class="control-btn open">Открыть двери</button>
+          <button id="closeDoorBtn" class="control-btn close">Закрыть двери</button>
+          <button id="cancelBtn" class="control-btn cancel">Отмена</button>
+          <a id="dispatchBtn" class="control-btn dispatch" href="tel:+78005553535">Связь с диспетчером</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
